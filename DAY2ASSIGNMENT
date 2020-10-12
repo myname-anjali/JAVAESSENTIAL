@@ -1,0 +1,22 @@
+package employee;
+
+public class employee1{
+	String name;
+	int age;
+	String city;
+	
+	public void display(String name,int age,String city)
+	{
+		System.out.println("the name is "+name);
+		System.out.println("the age is"+age);
+		System.out.println("the city is "+city);
+	}
+   
+	public static void main(String[] args) {
+		employee1 e=new employee1();
+        employee1 a=new employee1();		
+             e.display("anjali",21,"jharsuguda");
+             a.display("sajal",3,"jharsuguda");
+	}
+
+}
