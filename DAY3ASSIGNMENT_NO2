@@ -1,0 +1,41 @@
+package students;
+import java.util.*;
+public class employeee {
+	public static void main(String args[]) {
+	String name;
+	int dob;
+	int mob;
+	int yob;
+	int  monthly_salary;
+	float tax;
+	Scanner sc=new Scanner (System.in);
+	for(int i=0;i<=4;i++)
+	{
+	System.out.println("Enter the details ");
+	name=sc.next();
+	System.out.println("Employee name "+name);
+	dob=sc.nextInt();
+	System.out.println("Employee date of birth "+dob);
+	mob=sc.nextInt();
+	System.out.println("Employee month of birth "+mob);
+	yob=sc.nextInt();
+	System.out.println("Employee year of birth "+yob);
+	monthly_salary=sc.nextInt();
+	System.out.println("Employee monthly salary "+monthly_salary);
+	
+	if(monthly_salary==200000)
+	  tax=200000*5/100;
+	else if (monthly_salary==300000)
+		tax=300000*10/100;
+	else if (monthly_salary==400000)
+		tax=400000*15/100;
+	else if (monthly_salary==500000)
+		tax=500000*20/100;
+	else
+		tax=0;
+	System.out.println("Name of the employee is "+name);
+	System.out.println("Age of the employee is "+(2020-yob));
+	System.out.println("Annual salary of the employee is "+(monthly_salary*12));
+  }
+}
+}
